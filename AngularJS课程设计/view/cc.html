@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<meta charset="utf-8" />
+<title>综合练习_首页</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/app.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/route.js"></script>
+</head>
+<body ng-controller="mainctrl">
+<div class="m_bottom">
+						<div class="padder">      
+							<div class="streamline b-l b-info m-l-lg m-b padder-v">
+							  <div ng-repeat="x in yonghu">
+								<a class="pull-left thumb-sm avatar m-l-n-md">
+								  <img src="{{x.img}}" class="img-circle" alt="...">
+								</a>
+								<div class="m-l-lg">
+								  <div class="m-b-xs">
+									<a href="" class="h4">{{x.name}}</a>
+									<span class="text-muted m-l-sm pull-right">
+									  现在
+									</span>
+								  </div>
+								  <div class="m-b">
+									<div>{{x.commen}}</div>
+
+							   <div class="m-l-lg">
+								<a class="pull-left thumb-sm avatar">
+								  <img src="{{user.img}}" alt="...">
+								</a>          
+								<div class="m-l-xxl panel b-a">
+								  <div class="panel-heading pos-rlt">
+									<span class="arrow left pull-up"></span>
+									<span class="text-muted m-l-sm pull-right">
+									  10m ago
+									</span>
+									<a href="">{{user.name}}</a>
+									{{val}}                      
+								  </div>
+								</div>
+							  </div>
+									<div class="panel panel-default m-t-md m-b-n-sm pos-rlt" >
+									  <form>
+										<textarea class="form-control no-border" rows="3" placeholder="Your comment..." id="comment"></textarea>
+									  </form>
+									  <div class="panel-footer bg-light lter">
+										<button class="btn btn-info pull-right btn-sm" ng-click="send()">评论</button>
+										<ul class="nav nav-pills nav-sm">
+										  <li><a href=""><i class="fa fa-camera text-muted"></i></a></li>
+										  <li><a href=""><i class="fa fa-video-camera text-muted"></i></a></li>
+										</ul>
+									  </div>
+									</div>
+									<div class="m-t-sm">
+									  <a href="" class="text-muted m-xs"><i class="icon-action-redo"></i></a>
+									  <a href="" class="text-muted m-xs"><i class="icon-star"></i></a>
+									  <a href="" class="text-muted m-xs"><i class="icon-refresh"></i></a>
+									</div>
+								  </div>
+								</div>
+							  </div>
+</body>
+</html>
